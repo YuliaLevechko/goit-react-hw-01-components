@@ -5,12 +5,12 @@ import FriendListItem from './FriendListItem';
 const FriendList = ({ friends }) => {
     return (
         <>
-    <ul className={css.friend_list}>
-        {friends.map(({ avatar, name, isOnline, id }) => 
-            <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline} />
-        )}
+            <ul className={css.friend_list}>
+                {friends.map(({ avatar, name, isOnline, id }) => 
+                    <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline} />
+                )}
             </ul>
-            </>
+        </>
     );
 };
 
